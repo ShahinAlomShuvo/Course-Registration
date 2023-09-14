@@ -1,7 +1,7 @@
 import { faBookOpen, faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Course = ({ course }) => {
+const Course = ({ course, cartHandler }) => {
   const { course_title, course_banner, course_details, price, credit } = course;
   return (
     <>
@@ -15,6 +15,7 @@ const Course = ({ course }) => {
               {course_title}
             </h2>
             <p className='text-sm text-gray-500 '>{course_details}</p>
+            {/* price & credit  */}
             <div className='flex flex-col gap-2 xl:flex-row justify-between py-2'>
               <div className='flex items-center gap-2 text-gray-600'>
                 <FontAwesomeIcon className='text-2xl' icon={faDollarSign} />
@@ -26,7 +27,10 @@ const Course = ({ course }) => {
               </div>
             </div>
             <div className='card-actions pt-2'>
-              <button className='btn btn-info btn-block text-white'>
+              <button
+                onClick={() => cartHandler(course)}
+                className='btn btn-info btn-block text-white'
+              >
                 Select
               </button>
             </div>
