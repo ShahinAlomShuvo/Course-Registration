@@ -1,4 +1,5 @@
 import CartItem from "./CartItem";
+import PropTypes from "prop-types";
 
 const Cart = ({ addCourse, credit, price, remainingCredit }) => {
   return (
@@ -22,6 +23,12 @@ const Cart = ({ addCourse, credit, price, remainingCredit }) => {
       </div>
     </>
   );
+};
+Cart.propTypes = {
+  addCourse: PropTypes.array.isRequired,
+  credit: PropTypes.number.isRequired,
+  price: PropTypes.number.isRequired,
+  remainingCredit: PropTypes.number.isRequired,
 };
 
 export default Cart;

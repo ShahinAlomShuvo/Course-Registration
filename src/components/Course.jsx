@@ -1,5 +1,6 @@
 import { faBookOpen, faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PropTypes from "prop-types";
 
 const Course = ({ course, cartHandler }) => {
   const { course_title, course_banner, course_details, price, credit } = course;
@@ -39,6 +40,11 @@ const Course = ({ course, cartHandler }) => {
       </div>
     </>
   );
+};
+
+Course.propTypes = {
+  course: PropTypes.object.isRequired,
+  cartHandler: PropTypes.func.isRequired,
 };
 
 export default Course;
