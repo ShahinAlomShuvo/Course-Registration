@@ -29,7 +29,7 @@ To enhance the user experience, the project provides real-time error notificatio
 
 - ### App Component (App.jsx):
 
-I have state variable like addCourse, credit, price, and remainingCredit declared using the useState hook. These variable are used to manage the cart items, the total credit, total price and the remaining credit.
+I have state variables like addCourse, credit, price, and remainingCredit declared using the useState hook. These variables are used to manage the cart items, the total credit,the total price and the remaining credit.
 
 - ### Courses Component (Courses.jsx):
 
