@@ -1,4 +1,6 @@
-## 1. Course Selection and Cart Management
+<h1 align='center'>My Project features</h1>
+
+### 1. Course Selection and Cart Management
 
 This Project allows users to select courses displayed on the website.
 Each courses is presented with detailed information, including the course title, a banner image, course details,price and credit hours.
