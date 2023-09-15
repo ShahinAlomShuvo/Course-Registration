@@ -24,3 +24,14 @@ To enhance the user experience, the project provides real-time error notificatio
 - Attempting to select the same course multiple times.
 - Having insufficient credit hours to select additional courses.
 - Exceeding the established credit limit.
+
+<h1 align='center'>How i managed the state in my assignment project</h1>
+
+- ### App Component (App.jsx):
+
+I have state variable like addCourse, credit, price, and remainingCredit declared using the useState hook. These variable are used to manage the cart items, the total credit, total price and the remaining credit.
+
+- ### Courses Component (Courses.jsx):
+
+I use the useState hook to manage the courses state variable, which is initialized as an empty array.
+I fetch course data from an external JSON file using the useEffect hook, and when the data is loaded, i updated the courses state with the fetched data.
